@@ -1,0 +1,17 @@
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows10.0.19041.0\MyNewEngine.exe
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows10.0.19041.0\MyNewEngine.deps.json
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows10.0.19041.0\MyNewEngine.runtimeconfig.json
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows10.0.19041.0\MyNewEngine.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows10.0.19041.0\MyNewEngine.pdb
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows10.0.19041.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows10.0.19041.0\WinRT.Runtime.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEngine.AssemblyInfoInputs.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEngine.AssemblyInfo.cs
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEngine.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEng.B19C3553.Up2Date
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEngine.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\refint\MyNewEngine.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEngine.pdb
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\MyNewEngine.genruntimeconfig.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows10.0.19041.0\ref\MyNewEngine.dll

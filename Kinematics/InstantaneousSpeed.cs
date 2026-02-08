@@ -1,0 +1,18 @@
+using System;
+namespace Geodesy.Physics;
+using static Geodesy.Physics.Haversine_Formula;
+using static Geodesy.Physics.Validation;
+
+public static class InstantaneousSpeed
+{
+    public static double CalculateInstantaneousSpeed(double distanceInKm, double fullTimeInSeconds)
+    {
+        double distanceInMeters = distanceInKm * 1000.0;
+        return isValidInput(distanceInMeters, fullTimeInSeconds) ? distanceInMeters / fullTimeInSeconds : 0;
+    }
+
+    public static double Tokmh(double speedInMs)
+    {
+        return Math.Round((speedInMs * 3.6) , 3);
+    }
+}

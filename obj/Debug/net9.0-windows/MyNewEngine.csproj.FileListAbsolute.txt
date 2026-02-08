@@ -1,0 +1,14 @@
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\MyNewEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\MyNewEngine.AssemblyInfoInputs.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\MyNewEngine.AssemblyInfo.cs
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\MyNewEngine.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows\MyNewEngine.exe
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows\MyNewEngine.deps.json
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows\MyNewEngine.runtimeconfig.json
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows\MyNewEngine.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\bin\Debug\net9.0-windows\MyNewEngine.pdb
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\MyNewEngine.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\refint\MyNewEngine.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\MyNewEngine.pdb
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\MyNewEngine.genruntimeconfig.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinetic\MyNewEngine\obj\Debug\net9.0-windows\ref\MyNewEngine.dll
