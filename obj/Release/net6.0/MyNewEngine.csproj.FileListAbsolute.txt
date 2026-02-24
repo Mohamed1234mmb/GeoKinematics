@@ -1,0 +1,13 @@
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net6.0\GeoKinematics.deps.json
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net6.0\GeoKinematics.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net6.0\GeoKinematics.pdb
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\MyNewEngine.csproj.AssemblyReference.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\MyNewEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\MyNewEngine.AssemblyInfoInputs.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\MyNewEngine.AssemblyInfo.cs
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\MyNewEngine.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\MyNewEngine.sourcelink.json
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\GeoKinematics.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\refint\GeoKinematics.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\GeoKinematics.pdb
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\ref\GeoKinematics.dll

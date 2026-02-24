@@ -9,36 +9,17 @@ namespace Geodesy.Demo
         {
             double lat1 = 30.0444;
             double lon1 = 31.2357;
-            double lat2 = 31.2001;
-            double lon2 = 29.9187;
+            double lat2 = 55.7558;
+            double lon2 = 37.6173;
 
-            double myRadius = EarthGeocentricRadius.GetRadius(lat1);
-            double distance = Haversine_Formula.CalculateDistance(lat1, lon1, lat2, lon2, myRadius);
+            double radius = EarthGeocentricRadius.GetRadius(lat1);
+            double distance = Haversine_Formula.CalculateDistance(lat1, lon1, lat2, lon2, radius);
+            double speed = InstantaneousSpeed.CalculateInstantaneousSpeed(distance, 100);
+            double time = Seconds.durationSeconds(distance, speed);
 
-            double speed = InstantaneousSpeed.CalculateInstantaneousSpeed(distance, 10800);
-            double tokmh = InstantaneousSpeed.Tokmh(speed);
-
-            double travelSeconds = Seconds.durationSeconds(distance, tokmh);
-            string formattedTime = Seconds.FormateTime(travelSeconds);
-
-            double horizon = AlBiruni.CalculateEarthRadius(0.5, 0.2);
-            float force = Newton2law.CalculateEngineForce(1200f, 2.5f);
-
-            float airRes = Newton2law.CalculateAirResistance(1.225f, 0.3f, 2.2f, speed / 3.6);
-            float netForce = Newton2law.CaculteNetForce(force, airRes);
-
-            double terminalV = TerminalVelocity.Calculate(300000, 1.225, 0.3, 2.2);
-            double impactV = Collision.CalculateInelasticCollision(1200f, 1500f, 80f, 40f);
-
-            Console.WriteLine($"Distance: {distance} km");
-            Console.WriteLine($"Travel Time: {formattedTime} h");
-            Console.WriteLine($"Time : {travelSeconds} s");
-            Console.WriteLine($"Speed: {speed} m/s");
-            Console.WriteLine($"Tokmh: {tokmh} km/h");
-            Console.WriteLine($"Horizon: {horizon} km");
-            Console.WriteLine($"Net Force: {netForce} N");
-            Console.WriteLine($"Terminal Velocity: {terminalV} m/s");
-            Console.WriteLine($"Collision Impact: {impactV} km/h");
+            Console.WriteLine($"The radius of the earth is: {radius} km");
+            Console.WriteLine($"The distance between the two points is: {distance} km");
+            Console.WriteLine($"The time it takes to travel the distance is: {Seconds.FormateTime(time)}");
         }
     }
 }

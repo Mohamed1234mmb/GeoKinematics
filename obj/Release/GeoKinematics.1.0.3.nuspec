@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GeoKinematics</id>
+    <version>1.0.3</version>
+    <authors>Mohamed Medhat Mohamed</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>GK.png</icon>
+    <projectUrl>https://github.com/Mohamed1234mmb/GeoKinematics</projectUrl>
+    <description>Mathematical Engineering for High-Performance Geospatial Kinematics. Includes
+      models from Al-Biruni and Al-Buzjani for high-precision geodesy.</description>
+    <tags>geospatial, kinematics, physics-engine, geodesy, navigation, csharp</tags>
+    <repository type="git" url="https://github.com/Mohamed1234mmb/GeoKinematics" commit="5747630753287ae2dbe9497bbf368dff964033c0" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.30" exclude="Build,Analyzers" />
+        <dependency id="NmeaParser" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.30" exclude="Build,Analyzers" />
+        <dependency id="NmeaParser" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.30" exclude="Build,Analyzers" />
+        <dependency id="NmeaParser" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="NmeaParser" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net6.0\GeoKinematics.dll" target="lib\net6.0\GeoKinematics.dll" />
+    <file src="C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net8.0\GeoKinematics.dll" target="lib\net8.0\GeoKinematics.dll" />
+    <file src="C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net9.0\GeoKinematics.dll" target="lib\net9.0\GeoKinematics.dll" />
+    <file src="C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\netstandard2.0\GeoKinematics.dll" target="lib\netstandard2.0\GeoKinematics.dll" />
+    <file src="C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\GK.png" target="\GK.png" />
+    <file src="C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\README.md" target="\README.md" />
+  </files>
+</package>

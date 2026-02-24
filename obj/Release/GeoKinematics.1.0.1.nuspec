@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GeoKinematics</id>
+    <version>1.0.1</version>
+    <authors>Mohamed Medhat Mohamed</authors>
+    <projectUrl>https://github.com/Mohamed1234mmb/GeoKinematics</projectUrl>
+    <description>Mathematical Engineering for High-Performance Geospatial Kinematics</description>
+    <repository type="git" url="https://github.com/Mohamed1234mmb/GeoKinematics" commit="5747630753287ae2dbe9497bbf368dff964033c0" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.30" exclude="Build,Analyzers" />
+        <dependency id="NmeaParser" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Speech" version="9.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net9.0\GeoKinematics.dll" target="lib\net9.0\GeoKinematics.dll" />
+  </files>
+</package>

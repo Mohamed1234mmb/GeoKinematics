@@ -1,17 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "spyAxGiS8Kw=",
+  "dgSpecHash": "fy83Oct7AmI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mohamed Medhat\\OneDrive\\Desktop\\GeoKinetic\\MyNewEngine\\MyNewEngine.csproj",
+  "projectFilePath": "C:\\Users\\Mohamed Medhat\\OneDrive\\Desktop\\GeoKinematics\\MyNewEngine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\extendedgeocoordinate\\3.2.0\\extendedgeocoordinate.3.2.0.nupkg.sha512",
     "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.maui.essentials\\10.0.30\\microsoft.maui.essentials.10.0.30.nupkg.sha512",
     "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.maui.graphics\\10.0.30\\microsoft.maui.graphics.10.0.30.nupkg.sha512",
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\nmeaparser\\2.1.0\\nmeaparser.2.1.0.nupkg.sha512",
     "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\smartextensionmethods\\3.0.1\\smartextensionmethods.3.0.1.nupkg.sha512",
     "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\system.numerics.vectors\\4.6.1\\system.numerics.vectors.4.6.1.nupkg.sha512",
-    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\system.speech\\9.0.0\\system.speech.9.0.0.nupkg.sha512"
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\Mohamed Medhat\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512"
   ],
   "logs": []
 }

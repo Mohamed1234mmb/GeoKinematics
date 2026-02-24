@@ -1,0 +1,133 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GeoKinematics/1.0.3": {
+        "dependencies": {
+          "Microsoft.Maui.Essentials": "10.0.30",
+          "NmeaParser": "2.1.0"
+        },
+        "runtime": {
+          "GeoKinematics.dll": {}
+        }
+      },
+      "ExtendedGeoCoordinate/3.2.0": {
+        "dependencies": {
+          "SmartExtensionMethods": "3.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GeoCoordinate.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.Maui.Essentials/10.0.30": {
+        "dependencies": {
+          "Microsoft.Maui.Graphics": "10.0.30",
+          "System.Numerics.Vectors": "4.6.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Maui.Essentials.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.3026.6402"
+          }
+        }
+      },
+      "Microsoft.Maui.Graphics/10.0.30": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.6.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Maui.Graphics.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.3026.6402"
+          }
+        }
+      },
+      "NmeaParser/2.1.0": {
+        "dependencies": {
+          "ExtendedGeoCoordinate": "3.2.0",
+          "Microsoft.CSharp": "4.7.0",
+          "SmartExtensionMethods": "3.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NmeaParser.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "SmartExtensionMethods/3.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/SmartExtensions.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.6.1": {}
+    }
+  },
+  "libraries": {
+    "GeoKinematics/1.0.3": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExtendedGeoCoordinate/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EZbLv5vfFnHEG9F+N1lUjiuG51+DizRfvoVCCqtMnS/bbP++uw6tCYx9TLk/2jOmvJP47BBpnG29U/8ZQzYeAQ==",
+      "path": "extendedgeocoordinate/3.2.0",
+      "hashPath": "extendedgeocoordinate.3.2.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Maui.Essentials/10.0.30": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KCcqDAckbyDbao5etGRR2gck7wj1mhPTnRQSpZS+Q+w+09TU7P8m5HY/evYfU8w4iLkeoDYOkp5xtlAeZ8zd6A==",
+      "path": "microsoft.maui.essentials/10.0.30",
+      "hashPath": "microsoft.maui.essentials.10.0.30.nupkg.sha512"
+    },
+    "Microsoft.Maui.Graphics/10.0.30": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q7IBqGcdcQ7tzuPpDgisQ/svWXeJmmNhqjoGYi22vbQLtodJOMsAq6izdZrXi+WQME9Q1GNC4Wqwaq5KqpeTow==",
+      "path": "microsoft.maui.graphics/10.0.30",
+      "hashPath": "microsoft.maui.graphics.10.0.30.nupkg.sha512"
+    },
+    "NmeaParser/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gXQB8FAKlnywHsNGJV/aLG+6m63CA5+fkjfVjCN7+he3kG6A6ZS8oPDfEDsItRoy11QGFSMjGmI8uWwhkdu/oQ==",
+      "path": "nmeaparser/2.1.0",
+      "hashPath": "nmeaparser.2.1.0.nupkg.sha512"
+    },
+    "SmartExtensionMethods/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qJIOx+dYhvhr9fq1WJO67u0FSpbscJqOIqiIjZJDTmVAPTtdwZtJVbbTyuceK7RfHcRC6Z3kFXp/egpCs3WwXg==",
+      "path": "smartextensionmethods/3.0.1",
+      "hashPath": "smartextensionmethods.3.0.1.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sQxefTnhagrhoq2ReR0D/6K0zJcr9Hrd6kikeXsA1I8kOCboTavcUC4r7TSfpKFeE163uMuxZcyfO1mGO3EN8Q==",
+      "path": "system.numerics.vectors/4.6.1",
+      "hashPath": "system.numerics.vectors.4.6.1.nupkg.sha512"
+    }
+  }
+}

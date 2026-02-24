@@ -7,14 +7,13 @@ public static class Seconds
 
     public static double durationSeconds(double distance, double speed)
     {
-        return isValidInput(distance, speed) ? Math.Round((distance / speed) * 3600, 2) : 0.0;
+        double seconds = distance / speed;
+        return isValidInput(seconds) ? Math.Round((seconds) * 3600, 2) : 0.0;
     }
 
     public static string FormateTime(double totalSeconds)
     {
-        int h = (int)Math.Floor(totalSeconds / 3600);
-        int m = (int)Math.Floor(totalSeconds % 3600 / 60);
-        int s = (int)Math.Round(totalSeconds % 60, 2);
-        return $"{h:D2}:{m:D2}:{s:D2}";
+        TimeSpan timeSpan = TimeSpan.FromSeconds(totalSeconds);
+        return timeSpan.ToString(@"hh\:mm\:ss");
     }
 }

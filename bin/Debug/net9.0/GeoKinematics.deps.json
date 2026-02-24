@@ -6,11 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "GeoKinematics/1.0.0": {
+      "GeoKinematics/1.0.3": {
         "dependencies": {
           "Microsoft.Maui.Essentials": "10.0.30",
-          "NmeaParser": "2.1.0",
-          "System.Speech": "9.0.0"
+          "NmeaParser": "2.1.0"
         },
         "runtime": {
           "GeoKinematics.dll": {}
@@ -72,27 +71,11 @@
           }
         }
       },
-      "System.Numerics.Vectors/4.6.1": {},
-      "System.Speech/9.0.0": {
-        "runtime": {
-          "lib/net9.0/System.Speech.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52809"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net9.0/System.Speech.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52809"
-          }
-        }
-      }
+      "System.Numerics.Vectors/4.6.1": {}
     }
   },
   "libraries": {
-    "GeoKinematics/1.0.0": {
+    "GeoKinematics/1.0.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -145,13 +128,6 @@
       "sha512": "sha512-sQxefTnhagrhoq2ReR0D/6K0zJcr9Hrd6kikeXsA1I8kOCboTavcUC4r7TSfpKFeE163uMuxZcyfO1mGO3EN8Q==",
       "path": "system.numerics.vectors/4.6.1",
       "hashPath": "system.numerics.vectors.4.6.1.nupkg.sha512"
-    },
-    "System.Speech/9.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-z8mvEVBfWSi0692vPOra8MougSEJCDzlaLj4g0aA87XDZpJoJD3BJTcJ0MuFbbN1fOT9Cr2ZFqXhZc+zzX0Gwg==",
-      "path": "system.speech/9.0.0",
-      "hashPath": "system.speech.9.0.0.nupkg.sha512"
     }
   }
 }
