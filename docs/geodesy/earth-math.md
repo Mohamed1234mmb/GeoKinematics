@@ -43,6 +43,3 @@ double earthRadius = Earth.PolarRadius;
 Console.WriteLine(earthRadius);
 
 ```
----
-*For technical API details, visit the [EarthMath Reference](xref:Geodesy.Physics.EarthMath).*
----

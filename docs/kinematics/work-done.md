@@ -11,6 +11,3 @@ float work = WorkDone.CalculateWorkDone(10.0f, 5.0f);
 Console.WriteLine($"You did {work} Joules of work!");
 ```
 
----
-*For more information API visit [WorkDone Reference](xref:Geodesy.Physics.WorkDone)*
----

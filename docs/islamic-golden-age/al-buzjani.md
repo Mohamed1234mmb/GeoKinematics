@@ -47,9 +47,3 @@ Console.WriteLine("the road to home is: " + angleToHomeInDegrees);
 double radians = EarthMath.DegreesToRadians(45);
 Console.WriteLine(radians);
 ```
----
-*For more information API visit [AlBuzjani Reference](xref:Geodesy.Physics.AlBuzjani)* 
----
-
-
-

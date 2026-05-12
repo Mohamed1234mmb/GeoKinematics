@@ -26,5 +26,3 @@ string formattedTime = Seconds.FormatTime(totalSeconds);
 Console.WriteLine(formattedTime);
 ```
 
----
-*For more information API visit [Second Reference](xref:Geodesy.Physics.Second)*

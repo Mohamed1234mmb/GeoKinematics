@@ -13,7 +13,3 @@ float time =  5s;
 
 float acceleration = Acceleration.CalculateAcceleration(finalSpeed, initialSpeed, time);
 ```
-
-
----
-*For more information API visit [Acceleration Reference](xref:Geodesy.Physics.Acceleration)*

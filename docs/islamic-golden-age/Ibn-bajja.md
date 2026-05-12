@@ -14,8 +14,3 @@ float Air = 1.225f;
 float velocity = IbnBajja.CalculateVelocity(CarPush, Air);
 Console.WriteLine("the speed of the car is: " + velocity);
 ```
-
-
----
-*For more information API visit [IbnBajja Reference](xref:Geodesy.Physics.IbnBajja)* 
----

@@ -36,6 +36,3 @@ Gets the standard average radius of the entire Earth (almost: 6371 km).
 double radius = RadiusEarthCenter.AverageRadius();
 Console.WriteLine(radius);
 ```
----
-*For more details , see [RadiusEarthCenter](xref:Geodesy.RadiusEarthCenter)*
----

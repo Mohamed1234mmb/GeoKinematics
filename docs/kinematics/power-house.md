@@ -36,6 +36,3 @@ double energyNeeded = 100000; // Joules
 double fuelPower = 34.2e6 // Energy per liter
 double fuelUsed = PowerHouse.EstimateFuelUsed(energyNeeded , fuelPower);
 ```
----
-*For more information API visit [PowerHouse Reference](xref:Geodesy.Physics.PowerHouse)*
----

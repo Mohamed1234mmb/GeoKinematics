@@ -47,6 +47,3 @@ double hours = Transfers.SecondsToHours(1800.0);
 Console.WriteLine(hours);
 // Result: 0.5
 ```
-
----
-*For technical API details, visit the [Transfers Reference](xref:Geodesy.Physics.Transfers).*

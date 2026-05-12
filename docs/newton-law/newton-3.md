@@ -53,6 +53,4 @@ Console.WriteLine(total);
 > **Logic:**
 > In `ReversePush`, if the input is zero, it returns zero; otherwise, it flips the sign to provide the perfect reaction force.
 
----
-*For technical API details, visit the [Newton3Law Reference](./newton-3.md).*
----
+

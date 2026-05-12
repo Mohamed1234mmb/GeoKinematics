@@ -1,6 +1,6 @@
 # GeoKinematics
 
-  it is a C# library that i designed using . Net 9.0. it performs calculations for (Earth center) models from Al-biruni Al-buzjani, Ibn-bajja and Newton (etc).
+it is a C# library that i designed using .Net 9.0. it performs calculations for (Earth center) models from Al-biruni Al-buzjani, Ibn-bajja and Newton (etc).
 ---
 
 ### Documentation
@@ -8,52 +8,53 @@
 I tried to design the library in a simpler and clearer way:
 
 ### Geodesy & Earth Models
-- [Earth Mathematical Models](geodesy/earth-math.md)
-- [Haversine Distance Formula](geodesy/haversine-formula.md)
-- [Earth Radius Calculations](geodesy/radius-earth-center.md)
+- [Earth Mathematical Models](https://github.com)
+
+- [Haversine Distance Formula](https://github.com)
+- [Earth Radius Calculations](https://github.com)
 
 ---
 
-###  Islamic Golden Age Scholars
+### Islamic Golden Age Scholars
 
-- [Al-Biruni: Earth Radius mountain method](islamic-golden-age/al-biruni.md)
+- [Al-Biruni: Earth Radius mountain method](https://github.com)
 
-- [Al-Buzjani: Spherical Trigonometry](islamic-golden-age/al-buzjani.md)
+- [Al-Buzjani: Spherical Trigonometry](https://github.com)
 
-- [Ibn-Bajja: Early Dynamics & Velocity](islamic-golden-age/Ibn-bajja.md)
-
----
-
-###  Kinematics & Motion
-
-- [Current Speed (Real-time)](kinematics/speed-right-now.md)
-
-- [Speed Limits & Rules](kinematics/speed-limits.md)
-
-- [Acceleration & Deceleration Engine](kinematics/acceleration.md)
-
-- [Power House (Energy Storage)](kinematics/power-house.md)
-
-- [Work Done & Potential Energy](kinematics/work-done.md)
-
-- [Collision Dynamics (Elastic/Inelastic)](kinematics/collision.md)
-
-- [Time Modules (Seconds)](kinematics/second.md)
+- [Ibn-Bajja: Early Dynamics & Velocity](https://github.com)
 
 ---
 
-###  Newtonian Physics
+### Kinematics & Motion
+
+- [Current Speed (Real-time)](https://github.com)
+
+- [Speed Limits & Rules](https://github.com)
+
+- [Acceleration & Deceleration Engine](https://github.com)
+
+- [Power House (Energy Storage)](https://github.com)
+
+- [Work Done & Potential Energy](https://github.com)
+
+- [Collision Dynamics (Elastic/Inelastic)](https://github.com)
+
+- [Time Modules (Seconds)](https://github.com)
+
+---
+
+### Newtonian Physics
 The fundamental laws of motion implemented for .NET.
-- [Physics Constants](newton-law/constatns.md)
+- [Physics Constants](https://github.com)
 
-- [Newton's First Law (Inertia)](newton-law/newton-1.md)
+- [Newton's First Law (Inertia)](https://github.com)
 
-- [Newton's Second Law (Force)](newton-law/newton-2.md)
+- [Newton's Second Law (Force)](https://github.com)
 
-- [Newton's Third Law (Action/Reaction)](newton-law/newton-3.md)
+- [Newton's Third Law (Action/Reaction)](https://github.com)
 
 ### Transfers 
-- [transfers](transfers/transfers.md)
+- [transfers](https://github.com)
 
 ---
 
@@ -103,19 +104,10 @@ Language: C# 13.0
 
 **geodesy** : 
 > [MY HISTORY]
-**[Read My Story here](history.md)**
+**[Read My Story here](https://github.com)**
 
 >[LINK DOWNLOAD]
 **[Donwload on Nuget](https://www.nuget.org/packages/GeoKinematics)**
 
 > [GITHUB LINK]
 **[Read more on GitHub](https://github.com/Mohamed1234mmb/GeoKinematics)**
-
-
-
-
-
-
-
-
-

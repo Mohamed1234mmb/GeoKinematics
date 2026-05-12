@@ -33,6 +33,3 @@ double ball2Velocity = 0.0; // Stationary
 // In this case, Ball 1 will stop (0) and Ball 2 will take all the speed (5).
 var (v1Final, v2Final) = Collision.CalculateAndBounce(ball1Mass, ball2Mass, ball1Velocity, ball2Velocity);
 ```
-
-
-*For more information, see [Collision](xref:Geodesy.Physics.Collision.md)*

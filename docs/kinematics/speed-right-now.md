@@ -13,6 +13,3 @@ double speed = SpeedRightNow.GetSpeedRightNow(0.01, 0.5);
 Console.WiteLine(speed);
 ```
 
----
-*For more information API visit [SpeedRightNow Reference](xref:Geodesy.Physics.SpeedRightNow)*
----

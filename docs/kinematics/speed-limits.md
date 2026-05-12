@@ -17,6 +17,3 @@ double bodySize = 0.5; // standard body size
 double maxSpeed = SpeedLimits.CalculateMaxSpeed(push, airWeight, smoothness, bodySize);
 Console.WriteLine(maxSpeed);
 ```
----
-*For more information API visit [SpeedLimits Reference](xref:Geodesy.Physics.SpeedLimits)*
----

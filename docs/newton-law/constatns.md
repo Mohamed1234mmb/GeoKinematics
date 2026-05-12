@@ -32,5 +32,3 @@ Threshold values for force interactions.
 ### Quick Tip
 These constants are used internally by the `Newton` law classes. For example, `Newton2law` uses the `Earth_Mass` to calculate the gravity pull at different altitudes.
 
----
-*For technical API details, visit the [Constants Reference](xref:Geodesy.Physics).*

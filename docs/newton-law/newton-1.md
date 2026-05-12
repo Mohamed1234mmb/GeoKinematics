@@ -57,7 +57,3 @@ float wall = Newton1Law.IsStatic();
 Console.WriteLine(\$" {wall} ");
 // Result : 0.0f (No moving because the wall is still);
 ```
-
----
-*For technical API details, visit the [Newton1Law Reference](xref:Geodesy.Physics.Newton1Law).*
----

@@ -58,6 +58,3 @@ double dynamicRadius = RadiusEarthCenter.BetweenLatitude(Lat1 , Lat2);
 double distance = HaversineFormula.CalculateDistance(Lat1 , Lon1 , Lat2 , Lon2 , dynamicRadius);
 Console.WriteLine(distance);
 ```
-
-*For more details , see [Haversine Formula](xref:Geodesy.HaversineFormula)**
- 

@@ -31,8 +31,3 @@ This funtion to calculate radius of the Earth to height and horizon angle
 double kmHight = Transfers.MetersToKilometers(385.8);
 
 ```
-
----
-*For more information API visit [Al-biruni Reference](xref:Geodesy.IslamicGoldenAge.AlBiruni)*
----
-

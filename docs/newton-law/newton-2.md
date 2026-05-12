@@ -46,9 +46,6 @@ double g = Newton2Law.CalculateGravity(6371.0);
 > [!TIP]
 > **Units:** All distances should be provided in **Kilometers (KM)**. The library handles the conversion to meters internally.
 
----
-*For technical API details, visit the [Newton2Law Reference](xref:Geodesy.Physics.Newton2law)*
----
 
 
 
