@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoKinematics</name>
+    </assembly>
+    <members>
+        <member name="T:Geodesy.Physics.EarthMath">
+            <summary>
+            A set of fixed numbers used to calculate distance to Earth
+            <remarks>
+            to use for calculating distance between places on Earth map
+            </remarks>
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.EarthMath.DegreeToRadians">
+            <summary>
+            Calculates mathimatical (radian) like GPS this is number to used for 
+            converting degrees to radian
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.EarthMath.MiddleRadius">
+            <summary>
+            The distance between the center of the Earth and a specific point on its surface.
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.EarthMath.PolarRadius">
+            <summary>
+            distance between the center of the Earth and the two poles (the North pole and the South pole)
+            </summary>
+        </member>
+        <member name="T:Geodesy.Physics.HaversineFormula">
+            <summary>Is the calculation of the distance between 2 points on the Earth's surface , given the lines of longitude and latitude</summary> 
+        </member>
+        <member name="M:Geodesy.Physics.HaversineFormula.CalculateDistance(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>Calculate the Haversine distance between 2 points on the Earth's surface</summary>
+            <param name="Lat1">Latitude of the first point in degrees</param>
+            <param name="Lon1">Longitude of the first point in degrees</param>
+            <param name="Lat2">Latitude of the second point in degrees</param>
+            <param name="Lon2">Longitude of the second point in degrees</param>
+            <param name="EarthRadiusKM">the radius of the Earth in kilometers</param>
+            <example>
+            <code>
+            double Lat1 = 30.0444;
+            double Lon1 = 31.2357;
+            double Lat2 = 55.7558;
+            double Lon2 = 37.6173;
+            double EarthRadiusKM = 6371;
+            double distance = HaversineFormula.CalculateDistance(Lat1 , Lon1 , Lat2 , Lon2 , EarthRadiusKM);
+            </code>
+            </example>
+            <returns>The distance between the two points in kilometers</returns>
+        </member>
+        <member name="T:Geodesy.Physics.RadiusEarthCenter">
+            <summary>
+            This class helps you find the distance from the Earth's center to its surface.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.RadiusEarthCenter.At(System.Double)">
+            <summary>
+            Use this if you want calculate the raidus while "stand in place " at a specific location
+            </summary>
+            <param name="Latitude">The location's latitude in decimal degrees.</param>
+            <example>
+            <code>
+            double lat = 30.0444; // Cairo
+            double radius = RadiusEarthCenter.At(lat);
+            Console.WriteLine(radius);
+            </code>
+            </example>
+            <returns>The radius at this specific point in kilometers.</returns> 
+        </member>
+        <member name="M:Geodesy.Physics.RadiusEarthCenter.BetweenLatitude(System.Double,System.Double)">
+            <summary>
+            Calculates the average radius between two different locations.
+            </summary>
+            <param name="lat1">The latitude of the first point.</param>
+            <param name="lat2">The latitude of the second point.</param>
+            <example>
+            <code>
+            double r = RadiusEarthCenter.BetweenLatitude(30.0, 55.0);
+            </code>
+            </example>
+            <returns>The average radius between the two points in kilometers.</returns>
+        </member>
+        <member name="M:Geodesy.Physics.RadiusEarthCenter.AverageRadius">
+            <summary>
+            Gets the standard average radius of the entire Earth (almost: 6371 km).
+            </summary>
+            <example>
+            <code>
+            double globalRadius = RadiusEarthCenter.AverageRadius();
+            Console.WriteLine(globalRadius);
+            </code>
+            </example>
+            <returns>The global mean radius in kilometers (approx. 6371 km).</returns>
+        </member>
+        <member name="T:Geodesy.Physics.AlBiruni">
+            <summary>Al-Biruni's method for calculating the Earth's radius based on the observer's height and the angle to the horizon.</summary>
+        </member>
+        <member name="M:Geodesy.Physics.AlBiruni.CalculateEarthRadius(System.Double,System.Double)">
+            <summary>This funtion to calculate radius of the Earth to height and horizon angle</summary>
+            <param name="height">Summit height above sea level </param>
+            <param name="horizonAngleDegrees">It is the angle at which your eye tilts from the horizontal line in order to see the farthest point on the horizon.</param>
+            <example>
+            <code>
+            double IconicTowerHeight = 385.8; // height of the iconic tower in Egypt's New Administrative Capital in meters;
+            double HorizonAngle = 0.629; // angle to the horizon in degrees;
+            double EarthRadius = AlBiruni.CalculateEarthRadius(IconicTowerHeight, HorizonAngle);
+            Console.WriteLine($"The radius of the Earth {EarthRadius} meters");
+            </code>
+            </example>
+            <returns>returns the radius of the Earth Al-Biruni</returns>
+        </member>
+        <member name="T:Geodesy.Physics.AlBuzjani">
+            <summary>
+            These are Abu al-Wafa al-Buzjani's equation for calculating sides and angles
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.AlBuzjani.CalculateSide(System.Double,System.Double,System.Double)">
+            <summary>
+             This function calculates the length of a side in a triangle given two angles and one side using the Law of Sines.
+            </summary>
+             <param name="angleA">The angles of the first side are known in degrees.</param>
+             <param name="angleB">The angles of the second side are known in degrees.</param>
+             <param name="sideB">The length of the second side is known.</param>
+             <example>
+             <code>
+             double angleA = 30.0; //degrees
+             double angleB = 45.0; //degrees
+             double sideB = 10.0; //side length
+             double sideA = AlBuzjani.CalculateSide(angleA , angleB , sideB);
+             Console.WriteLine($"The length of side A is: {sideA}");
+             </code>
+             </example>
+             <returns>The Length of side</returns>
+        </member>
+        <member name="M:Geodesy.Physics.AlBuzjani.CalculateAngle(System.Double,System.Double,System.Double)">
+            <summary>
+            This function calculates the angle of a side in a triangle given two side and one angle using the Law of Sines.
+            </summary>
+            <param name="sideA">The length of the first side</param>
+            <param name="SideB">The length of the second side</param>
+            <param name="AngleB">The angle of the second side are known in degrees</param>
+            <example>
+            <code>
+            double sideA = 10.0; //side length
+            double SideB = 15.0; //side length
+            double AngleB = 45.0; //degrees
+            double AngleA = AlBuzjani.CalculateAngle(sideA, SideB, AngleB);
+            Console.WriteLine($"The angle of side A is: {AngleA}");
+            </code>
+            </example>
+            <returns>The angle of the first side in degrees</returns> 
+        </member>
+        <member name="T:Geodesy.Physics.IbnBajja">
+            <summary>
+            This class calculate how fast something moves by subtracting the (drag) from the push
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.IbnBajja.CalculateVelocity(System.Double,System.Double)">
+            <summary> 
+            Computes the final speed by subtracting the overhead (resistance) from the input power.
+            </summary>
+            <param name="push">The push applied to the object.</param>
+            <param name="resistance">The environmental drag or friction.</param>
+            <returns>Final speed (Always non-negative).</returns>
+        </member>
+        <member name="T:Geodesy.Physics.Acceleration">
+            <summary>
+            This class helps you find out how much an object is speeding up over time.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.Acceleration.CalculateAcceleration(System.Double,System.Double,System.Double)">
+            <summary>
+            It is what determines whether your speed is accelerating or decelerating.
+            </summary>
+            <param name="finalSpeed">The change in speed (Final speed minus).</param>
+            <param name="initialSpeed">The change in speed (initial speed minus).</param>
+            <param name="totalTime">The total time spent to reach that speed change.</param>
+            <example>
+            <code>
+            // If a car speeds up by 30 m/s in 5 seconds:
+            double acc = Acceleration.CalculateAcceleration(30.0, 5.0);
+            Console.WriteLine($"The acceleration is: {acc} m/s²");
+            </code>
+            </example>
+            <returns>The acceleration value. Returns 0.0 if the input is invalid or time is zero.</returns>
+        </member>
+        <member name="T:Geodesy.Physics.Collision">
+             <summary>
+            The class calculates when two things collide (whether they stick together or move away from each other).
+             </summary>
+        </member>
+        <member name="M:Geodesy.Physics.Collision.CalculateAndCrash(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Calculates the final speed for an Inelastic Collision (where objects stick together).
+            </summary>
+            <param name="m1">Mass of the first object.</param>
+            <param name="m2">Mass of the second object.</param>
+            <param name="v1">Initial velocity of the first object.</param>
+            <param name="v2">Initial velocity of the second object.</param>
+            <example>
+            <code>
+            // Example: A 2kg object hitting a stationary 3kg object and sticking to it.
+            double velocity = Collision.CalculateAndCrash(2f, 3f, 10f, 0f);
+            </code>
+            </example>
+            <returns>The combined final velocity of both objects.</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Collision.CalculateAndBounce(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Calculates the final velocity for an Elastic Collision (where objects bounce off each other).
+            </summary>
+            <param name="m1">Mass of the first object.</param>
+            <param name="m2">Mass of the second object.</param>
+            <param name="v1">Initial velocity of the first object.</param>
+            <param name="v2">Initial velocity of the second object.</param>
+            <example>
+            <code>
+            // Example: Two billiard balls hitting each other and bouncing away.
+            var (v1Final, v2Final) = Collision.CalculateAndBounce(1f, 1f, 5f, -5f);
+            </code>
+            </example>
+            <returns>A tuple containing the final velocity of object 1 and object 2.</returns>
+        </member>
+        <member name="T:Geodesy.Physics.PowerHouse">
+            <summary>
+            Logic for calculating energy: how it's stored, how it moves, and how it's burned.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.PowerHouse.CalculateStoredEnergy(System.Single,System.Single)">
+            <summary>
+            Calculates the energy stored in an object because of its height.
+            </summary>
+            <param name="gravity">Gravity force.</param>
+            <param name="height">How high the object is.</param>
+            <returns>Total stored energy.</returns>
+        </member>
+        <member name="M:Geodesy.Physics.PowerHouse.CalculateMovementEnergy(System.Single,System.Double)">
+            <summary>
+            Calculates the energy an object has while it's moving.
+            </summary>
+            <param name="mass">Object weight.</param>
+            <param name="speed">How fast it's going.</param>
+            <returns>Total movement energy.</returns>
+        </member>
+        <member name="M:Geodesy.Physics.PowerHouse.EstimateFuelUsed(System.Double,System.Double)">
+            <summary>
+            Estimates how much fuel you need to get a specific amount of energy.
+            </summary>
+            <param name="energyNeeded">Total energy required.</param>
+            <param name="fuelPower">How much energy 1 liter/unit of fuel gives.</param>
+            <returns>Amount of fuel to be used.</returns>
+        </member>
+        <member name="T:Geodesy.Physics.Seconds">
+            <summary>
+            This class helps you find out "How long" a trip will take.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.Seconds.CalculateDuration(System.Double,System.Double)">
+            <summary>
+            Calculates the total travel time in seconds.
+            </summary>
+            <param name="distance">The distance of the trip.</param>
+            <param name="speed">How fast you are going.</param>
+            <returns>Total time in seconds.</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Seconds.FormatTime(System.Double)">
+            <summary>
+            Converts raw seconds into a readable clock format (00:00:00).
+            </summary>
+            <param name="totalSeconds">The amount of seconds to format.</param>
+            <returns>A string like "Hours:Minutes:Seconds".</returns>
+        </member>
+        <member name="T:Geodesy.Physics.SpeedLimits">
+            <summary>
+            The maximum speed that the body can reach and cannot exceed.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.SpeedLimits.CalculateMaxSpeed(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Calculates the Max Speed an object can reach based on its power and the environment.
+            </summary>
+            <param name="push">How strong the push or the engine is.</param>
+            <param name="airWeight">How "heavy" or "thick" the air is (Standard is 1.225).</param>
+            <param name="smoothness">How easily the object "slides" through air (Slick vs. Blocky).</param>
+            <param name="bodySize">The size of the front of the object hitting the air.</param>
+            <returns>The Maximum Speed possible.</returns>
+        </member>
+        <member name="T:Geodesy.Physics.SpeedRightNow">
+            <summary>
+            This class tells you your Current Speed (Instant Speed) right now.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.SpeedRightNow.GetSpeedRightNow(System.Double,System.Double)">
+            <summary>
+            Calculates how fast you are going at this exact moment.
+            </summary>
+            <param name="distanceInKm">The tiny distance you just moved (in Kilometers).</param>
+            <param name="fullTimeInSeconds">The very small time it took to move that distance.</param>
+            <example>
+            <code>
+            // If you moved 0.01 km in 0.5 seconds:
+            double currentKmH = SpeedRightNow.GetSpeedRightNow(0.01, 0.5);
+            </code>
+            </example>
+            <returns>Your speed in Kilometers per Hour (km/h).</returns>
+        </member>
+        <member name="T:Geodesy.Physics.WorkDone">
+            <summary>
+            This class calculates the "Work Done" and the energy spent to move things.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.WorkDone.CalculateWorkDone(System.Single,System.Single)">
+            <summary>
+            Calculates how much work (effort) was done to move an object over a distance.
+            </summary>
+            <param name="calculateForce">The push or pull force applied.</param>
+            <param name="distance">How far the object moved.</param>
+            <returns>Total Work Done in Joules.</returns>
+        </member>
+        <member name="T:Geodesy.Physics.Newton1Constants">
+            <summary>
+            > Constants for Newton's First Laws (Static and Moving) states
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.Newton1Constants.StaticState">
+            <summary>
+            > This object at rest (static state)
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.Newton1Constants.MovingState">
+            <summary>
+            > This object at moving
+            </summary>
+        </member>
+        <member name="T:Geodesy.Physics.Newton2Constants">
+            <summary>
+            > Constants for Newton's Second Laws (Earth and Gravity)
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.Newton2Constants.GravitationalConstant">
+            <summary>
+            The Universal Gravitational Constant (G) that we use in all space calculations
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.Newton2Constants.EarthMass">
+            <summary>
+            Weight of palnet Earth in kilograms, used in gravity calculations
+            </summary>
+        </member>
+        <member name="T:Geodesy.Physics.Newton3Constants">
+            <summary>
+            > Constants for Newton's Third Laws (Action and Reaction)
+            </summary>
+        </member>
+        <member name="F:Geodesy.Physics.Newton3Constants.Minimum">
+            <summary>
+            The minimum value for a force to be considered active
+            </summary>
+        </member>
+        <member name="T:Geodesy.Physics.Newton1Law">
+            <summary>
+            it tells of the state of object which does not move from its place 
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.Newton1Law.ZeroCheck(System.Boolean,System.Boolean)">
+            <summary
+             > Use this if you want to know whether the object is still or not
+            </summary>
+            <example>
+             This example to use the function
+            <code>
+             bool isStatic = ZeroCheck(true , true)
+             </code>
+            </example>
+             <param name="val1">The state of the first object</param>
+             <param name="val2">The state of the second object</param>
+             <returns>
+             false if the object is still , and true if the object is moving
+             </returns>
+        </member>
+        <member name="M:Geodesy.Physics.Newton1Law.IsStatic">
+            <summary>
+             it represent of force when it is in a static state
+            </summary>
+            <example>
+             A book description on desk
+            <code>
+             float book = IsStatic()
+            </code>
+            </example>
+            <returns>0.0f it is mean the push (force) is in a static state</returns>
+        </member>
+        <member name="T:Geodesy.Physics.Newton2Law">
+            <summary>
+            This class handles the mathematical calcukate for movement: How you push things, how air slows them down, and how gravity pulls them.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.Newton2Law.CalculatePush(System.Single,System.Single)">
+            <summary>
+            Calculates the total "Push" (Force) needed to move an object.
+            </summary>
+            <param name="mass">The weight or "heaviness" of the object.</param> 
+            <param name="acceleration">How fast you want to increase the speed.</param>
+            <example>
+            <code>
+            float force = Newton2law.CalculatePush(1000f, 2.5f);
+            </code>
+            </example>
+            <returns>The total push in Newtons (N).</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Newton2Law.CalculateAirResistance(System.Single,System.Single,System.Single,System.Double)">
+            <summary>
+            Calculates how much the air "fights" or resists the moving object.
+            </summary>
+            <param name="airDensity">How "thick" the air is (e.g., thin at high altitudes, thick at sea level).</param>
+            <param name="dragCoefficient">How aerodynamic the shape is (slick vs. blocky).</param>
+            <param name="frontalArea">The size of the "face" hitting the air.</param>
+            <param name="speed">How fast the object is moving.</param>
+            <example>
+            <code>
+            float resistance = Newton2law.CalculateAirResistance(1.225f, 0.3f, 2.0f, 30.0);
+            </code>
+            </example>
+            <returns>The air resistance force in Newtons (N).</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Newton2Law.CalculateGravityPush(System.Single,System.Double)">
+            <summary>
+            Calculates the Earth's downward pull on a specific mass (like a car).
+            </summary>
+            <param name="carMass">The mass of the object being pulled.</param>
+            <param name="r_kilometers">Distance from the center of the Earth in Kilometers.</param>
+            <returns>The gravity force in Newtons (N).</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Newton2Law.CalculateGravity(System.Double)">
+            <summary>
+            Calculates the gravity acceleration constant at a specific distance.
+            </summary>
+            <param name="r_kilometers">Distance from the center of the Earth in Kilometers.</param>
+            <returns>The gravity value (g).</returns>
+        </member>
+        <member name="T:Geodesy.Physics.Newton3Law">
+            <summary>
+             This class diffrence between two pushes (forces): 
+            the push (force) you exerted
+            and the push (force) that will move against you.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.Newton3Law.ReversePush(System.Single)">
+            <summary>
+            The minimum value for a push (force) to be considered active
+            </summary>
+            <remarks>
+            <pra>
+            This value was set so that we ignore very small values
+            and avoid calculation  errors
+            </pra>
+            </remarks> 
+            <summary>
+            Here we ensure the value is inverted to get the reverse push (force).
+            </summary>
+            <example>
+            <code>
+            float reverse = Newton3law.ReversePush(10.0f); 
+            Console.WriteLine(reverse); // -10.0f
+            </code>
+            </example>
+            <param name="reverse_push">is the original push (force) that you want to reverse </param>
+            <returns>returns the reversed push (force) </returns>
+        </member>
+        <member name="M:Geodesy.Physics.Newton3Law.TotalPush(System.Single,System.Single)">
+            <summary>
+            Here we Calculate the total pushes (forces)
+            </summary>
+            <example>
+            <code>
+            float total = Newton  3law.TotalPush(10.0f, 5.0f);
+            Console.WriteLine(total); returns 15.0f;
+            </code>
+            </example>
+            <param name="first_push">This is the push (force) that you exerted (Starting push)</param>
+            <param name="second_push">This is the push (force) that will move against you</param>
+            <returns>
+            Returns the total push (force)
+            </returns>
+        </member>
+        <member name="T:Geodesy.Physics.Transfers">
+            <summary>
+            This class handles unit conversion logic for distance and time.
+            </summary>
+        </member>
+        <member name="M:Geodesy.Physics.Transfers.KilometersToMeters(System.Double)">
+            <summary>
+            Converts from Kilometers (km) to meters (m).
+            </summary>
+            <param name="kilometers">The value in kilometers (km).</param>
+            <returns>The value in meters (m).</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Transfers.MetersToKilometers(System.Double)">
+            <summary>
+            Converts from meters (m) to Kilometers (km).
+            </summary>
+            <param name="meters">The value in meters (m).</param>
+            <returns>The value in kilometers (km).</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Transfers.HoursToSeconds(System.Double)">
+            <summary>
+            Converts from hours (h) to seconds (s).
+            </summary>
+            <param name="hours">The value in hours (h).</param>
+            <returns>The value in seconds (s).</returns>
+        </member>
+        <member name="M:Geodesy.Physics.Transfers.SecondsToHours(System.Double)">
+            <summary>
+            Converts from seconds (s) to hours (h).
+            </summary>
+            <param name="seconds">The value in seconds (s).</param>
+            <returns>The value in hours (h).</returns>
+        </member>
+        <member name="T:Geodesy.Physics.Validation">
+            <summary>
+            Provides validation methods for geodetic an d physics calculations.
+            </summary>
+        </member>
+    </members>
+</doc>

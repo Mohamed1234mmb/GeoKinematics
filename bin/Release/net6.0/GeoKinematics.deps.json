@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "GeoKinematics/1.0.3": {
+      "GeoKinematics/2.0.0": {
         "dependencies": {
           "Microsoft.Maui.Essentials": "10.0.30",
           "NmeaParser": "2.1.0"
@@ -75,7 +75,7 @@
     }
   },
   "libraries": {
-    "GeoKinematics/1.0.3": {
+    "GeoKinematics/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

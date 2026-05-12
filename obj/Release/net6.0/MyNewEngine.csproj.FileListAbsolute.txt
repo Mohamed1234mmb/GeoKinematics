@@ -11,3 +11,5 @@ C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\GeoKin
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\refint\GeoKinematics.dll
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\GeoKinematics.pdb
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\ref\GeoKinematics.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Release\net6.0\GeoKinematics.xml
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Release\net6.0\GeoKinematics.xml

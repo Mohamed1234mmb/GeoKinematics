@@ -1,0 +1,31 @@
+# transfers.yml
+---
+# unit conversion logic for distance and time
+library: geokinematics
+version: 2.0.0
+
+conversions:
+  - category: distance
+    description: convert between kilometers and meters
+    units: [km, m]
+    logic:
+      km_to_m: "multiply by 1000"
+      m_to_km: "divide by 1000"
+    functions:
+      - kilometers_to_meters
+      - meters_to_kilometers
+
+  - category: time
+    description: convert between hours and seconds
+    units: [h, s]
+    logic:
+      hours_to_seconds: "multiply by 3600"
+      seconds_to_hours: "divide by 3600"
+    functions:
+      - hours_to_seconds
+      - seconds_to_hours
+
+advice: |
+  The calculations use integer units for
+  the laws of motion and high-performance physics.
+...

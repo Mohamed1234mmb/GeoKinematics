@@ -7,19 +7,38 @@ namespace Geodesy.Demo
     {
         static void Main(string[] args)
         {
+            double height = 385.8;
+            double angle = 0.629;
             double lat1 = 30.0444;
             double lon1 = 31.2357;
             double lat2 = 55.7558;
             double lon2 = 37.6173;
 
-            double radius = EarthGeocentricRadius.GetRadius(lat1);
-            double distance = Haversine_Formula.CalculateDistance(lat1, lon1, lat2, lon2, radius);
-            double speed = InstantaneousSpeed.CalculateInstantaneousSpeed(distance, 100);
-            double time = Seconds.durationSeconds(distance, speed);
+            double Km = Transfers.MetersToKilometers(height);
+            double radius = AlBiruni.CalculateEarthRadius(Km, angle);
+            double distance = HaversineFormula.CalculateDistance(lat1, lon1, lat2, lon2, radius);
+            Console.WriteLine($"The distance between the two points is {distance} kilometers.");
 
-            Console.WriteLine($"The radius of the earth is: {radius} km");
-            Console.WriteLine($"The distance between the two points is: {distance} km");
-            Console.WriteLine($"The time it takes to travel the distance is: {Seconds.FormateTime(time)}");
+
+            float f = Newton2Law.CalculatePush(1000f, 2.5f);
+            Console.WriteLine($"The force is {f} Newtons.");
+
+            float reverse = Newton3Law.ReversePush(10f);
+            Console.WriteLine($"The reverse push is {reverse} Newtons.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }

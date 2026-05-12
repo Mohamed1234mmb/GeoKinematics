@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Newton3Law: Action and Reaction | GeoKinematics </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Newton3Law: Action and Reaction | GeoKinematics ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Mohamed1234mmb/GeoKinematics/blob/main/docs/newton-law/newton-3.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="GeoKinematics">
+            GeoKinematics
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="newton3law-action-and-reaction">Newton3Law: Action and Reaction</h1>
+
+<p>This class handles the interaction between two opposing pushes (forces), based on the principle of action and reaction.</p>
+<h2 id="overview">Overview</h2>
+<p>According to Newton's Third Law, for every action, there is an equal and opposite reaction. This class calculates the difference between the push you exerted and the push that will move against you.</p>
+<hr>
+<h2 id="1-reverse-push">1. Reverse Push</h2>
+<p>Here we ensure the value is inverted to get the reverse push (force).</p>
+<p><strong>Example: Tennis Ball Hit</strong>
+When you hit a ball, it exerts a &quot;back push&quot; on the racket.</p>
+<pre><code class="lang-csharp">// You hit the ball with 10.0 Newtons
+float reverse = Newton3Law.ReversePush(10.0f);
+
+// The output shows the reversed push
+Console.WriteLine(reverse); 
+// Result: -10.0f
+</code></pre>
+<hr>
+<h2 id="2-total-push">2. Total Push</h2>
+<p>Here we calculate the total pushes (forces) of two opposing movements.</p>
+<p><strong>Example: Combined Car Push</strong>
+Imagine two cars pushing an object. This method calculates the net result while checking if it's active.</p>
+<pre><code class="lang-csharp">// car1: your push | car2: push against you
+float car1 = 10.0f;
+float car2 = 5.0f;
+
+float total = Newton3Law.TotalPush(car1, car2);
+
+Console.WriteLine(total); 
+// Result: 15.0f
+</code></pre>
+<hr>
+<h3 id="quick-tips">Quick Tips</h3>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><strong>Minimum Threshold:</strong>
+This value was set so that we ignore very small values and avoid calculation errors. The library ensures the total push is high enough to be considered active.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Logic:</strong>
+In <code>ReversePush</code>, if the input is zero, it returns zero; otherwise, it flips the sign to provide the perfect reaction force.</p>
+</div>
+<hr>
+<h2 id="for-technical-api-details-visit-the-newton3law-reference"><em>For technical API details, visit the <a href="newton-3.html">Newton3Law Reference</a>.</em></h2>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Mohamed1234mmb/GeoKinematics/blob/main/docs/newton-law/newton-3.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

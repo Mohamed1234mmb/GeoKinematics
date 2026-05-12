@@ -4,31 +4,34 @@
     <Authors>Mohamed Medhat Mohamed</Authors>
     <TargetName>GeoKinematics</TargetName>
     <TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
-    <OutputType>Library</OutputType>
+    <OutputType>library</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>GeoKinematics</AssemblyName>
     <RootNamespace>GeoKinematics</RootNamespace>
-    <Version>1.0.3</Version>
+    <Version>2.0.0</Version>
     <LangVersion>latest</LangVersion>
-    <Description>Mathematical Engineering for High-Performance Geospatial Kinematics. Includes
-      models from Al-Biruni and Al-Buzjani for high-precision geodesy.</Description>
+    <Description> it is a C# library that i designed using . Net 9.0. it performs calculations for (Earth center) models from Al-biruni Al-buzjani, Ibn-bajja and Newton (etc)..</Description>
 
     <PackageProjectUrl>https://github.com/Mohamed1234mmb/GeoKinematics</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Mohamed1234mmb/GeoKinematics</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <RepositoryType>git</RepositoryType>
-    <PackageIcon>GK.png</PackageIcon> 
+    <PackageIcon>GK.png</PackageIcon>
     <PackageTags>geospatial, kinematics, physics-engine, geodesy, navigation, csharp</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReadMeFile>read-more.md</PackageReadMeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="GK.png" Pack= "true" PackagePath="\"/>
+    <None Include="GK.png" Pack="true" PackagePath="\" />
     <PackageReference Include="Microsoft.Maui.Essentials" Version="10.0.30"
       Condition="'$(TargetFramework)' != 'netstandard2.0'" />
     <PackageReference Include="NmeaParser" Version="2.1.0" />
-    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="docs/read-more.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

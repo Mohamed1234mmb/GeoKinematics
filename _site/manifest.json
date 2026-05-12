@@ -1,0 +1,245 @@
+{
+  "source_base_path": "C:/Users/Mohamed Medhat/OneDrive/Desktop/GeoKinematics",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/geodesy/earth-math.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/geodesy/earth-math.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/geodesy/haversine-formula.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/geodesy/haversine-formula.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/geodesy/radius-earth-center.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/geodesy/radius-earth-center.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/history.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/history.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/islamic-golden-age/Ibn-bajja.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/islamic-golden-age/Ibn-bajja.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/islamic-golden-age/al-biruni.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/islamic-golden-age/al-biruni.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/islamic-golden-age/al-buzjani.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/islamic-golden-age/al-buzjani.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kinematics/acceleration.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kinematics/acceleration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kinematics/collision.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kinematics/collision.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kinematics/power-house.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kinematics/power-house.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kinematics/second.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kinematics/second.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kinematics/speed-limits.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kinematics/speed-limits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kinematics/speed-right-now.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kinematics/speed-right-now.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/kinematics/work-done.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/kinematics/work-done.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/newton-law/constatns.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/newton-law/constatns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/newton-law/newton-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/newton-law/newton-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/newton-law/newton-2.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/newton-law/newton-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/newton-law/newton-3.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/newton-law/newton-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/read-more.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/read-more.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/transfers/transfers.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/transfers/transfers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

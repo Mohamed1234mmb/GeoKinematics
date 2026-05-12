@@ -1,0 +1,30 @@
+# geodesy.yml
+---
+# advanced earth surface and distance calculations
+library: geokinematics
+version: 2.0.0
+
+earth_math_constants:
+  name: geodesy
+  constants:
+    middle_radius: "distance from center to surface"
+    polar_radius: "distance between center and poles"
+    degrees_to_radians_factor: "used for spherical trigonometry"
+
+distance_algorithms:
+  - name: haversine_formula
+    description: "calculates distance between two points (Lat/Lon) on a sphere"
+    logic_advice: |
+      for high altitudes (e.g., iconic tower), use Al-Biruni radius.
+      for journey precision, use dynamic radius between latitudes.
+
+geodesy_core:
+  module: radius_earth_center
+  methods:
+    at_latitude: "calculates exact radius at a specific point"
+    between_latitudes: "calculates average radius for a route"
+    average_radius: "standard earth radius (approx. 6371 km)"
+
+advice: |
+  high-altitude measurements. use dynamic radius for 99.9% accuracy.
+...

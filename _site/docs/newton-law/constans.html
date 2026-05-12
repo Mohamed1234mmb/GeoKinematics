@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Physics Constants | GeoKinematics </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Physics Constants | GeoKinematics ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Mohamed1234mmb/GeoKinematics/blob/main/docs/newton-law/constans.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="GeoKinematics">
+            GeoKinematics
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="physics-constants">Physics Constants</h1>
+
+<p>This module contains the physical constants used across Newton's laws calculations, ensuring consistency and accuracy in the physics engine.</p>
+<hr>
+<h2 id="1-newton1-constants-states">1. Newton1 Constants (States)</h2>
+<p>Defines the numerical representation of an object's movement state.</p>
+<ul>
+<li><strong>StaticState</strong>: <code>0.0f</code> (Represents an object at rest).</li>
+<li><strong>MovingState</strong>: <code>1.0f</code> (Represents an object in motion).</li>
+</ul>
+<hr>
+<h2 id="2-newton2-constants-earth--space">2. Newton2 Constants (Earth &amp; Space)</h2>
+<p>Core values used for universal gravitation and mass-based calculations.</p>
+<ul>
+<li><strong>Gravitational_Constant (G)</strong>: <code>6.67430e-11</code> (Universal gravitational constant).</li>
+<li><strong>Earth_Mass</strong>: <code>5.972e24 kg</code> (The mass of planet Earth).</li>
+</ul>
+<hr>
+<h2 id="3-newton3-constants-thresholds">3. Newton3 Constants (Thresholds)</h2>
+<p>Threshold values for force interactions.</p>
+<ul>
+<li><strong>minimum</strong>: <code>0.01f</code>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>This is the minimum value for a force to be considered <strong>active</strong>. Any calculation result below this threshold is treated as negligible (zero) to prevent noise.</p>
+</div>
+</li>
+</ul>
+<hr>
+<h3 id="quick-tip">Quick Tip</h3>
+<p>These constants are used internally by the <code>Newton</code> law classes. For example, <code>Newton2law</code> uses the <code>Earth_Mass</code> to calculate the gravity pull at different altitudes.</p>
+<hr>
+<p><em>For technical API details, visit the <a href="xref:Geodesy.Physics">Constants Reference</a>.</em></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Mohamed1234mmb/GeoKinematics/blob/main/docs/newton-law/constans.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+# newton.yaml
+---
+# data for newton laws
+
+library: geokinematics
+version: 2.0.0
+
+newton_laws:
+  - law: 1
+    name: static friction
+    constants: 
+      static_state: 0.0f
+      move_state: 1.0f
+    functions:
+      - name: zeroCheck
+        description: checks movement by comparing state
+
+  - law: 2
+    name: dynamic physics
+    constants: 
+      gravitational_constant_g: 6.67430e-11
+      earth_mass_kg: 5.972e24
+    functions:
+      - name: calculate_push
+      - name: calculate_air_resistance
+      - name: calculate_gravity_push
+
+  - law: 3
+    name : action and reaction
+    constants: 
+      minimum: 0.01f
+    functions:
+      - name: reverse_push
+      - name: total_push
+...
+
+

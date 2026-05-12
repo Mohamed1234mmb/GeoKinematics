@@ -11,3 +11,14 @@ C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\net6.0\GeoKinem
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\net6.0\refint\GeoKinematics.dll
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\net6.0\GeoKinematics.pdb
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\net6.0\ref\GeoKinematics.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\GeoKinematics.exe
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\GeoKinematics.runtimeconfig.json
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\GeoCoordinate.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\Microsoft.Maui.Essentials.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\Microsoft.Maui.Graphics.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\NmeaParser.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\SmartExtensions.dll
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\net6.0\MyNewEng.B19C3553.Up2Date
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\net6.0\MyNewEngine.genruntimeconfig.cache
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\net6.0\GeoKinematics.xml
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\net6.0\GeoKinematics.xml

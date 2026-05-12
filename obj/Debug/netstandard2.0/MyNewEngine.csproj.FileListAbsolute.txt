@@ -9,3 +9,5 @@ C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\netstandard2.0\
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\netstandard2.0\GeoKinematics.pdb
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\netstandard2.0\GeoKinematics.dll
 C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\netstandard2.0\GeoKinematics.pdb
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\bin\Debug\netstandard2.0\GeoKinematics.xml
+C:\Users\Mohamed Medhat\OneDrive\Desktop\GeoKinematics\obj\Debug\netstandard2.0\GeoKinematics.xml

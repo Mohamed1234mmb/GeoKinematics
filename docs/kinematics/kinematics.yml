@@ -1,0 +1,44 @@
+# kinematics.yaml
+---
+# kinematics and energy modules data
+library: geokinematics
+version: 2.0.0
+
+modules:
+  - name: acceleration
+    description: speed change over time
+    functions:
+      - calculate_acceleration
+
+  - name: collision
+    description: impact and momentum exchange
+    types:
+      - inelastic: objects stick together
+      - elastic: objects bounce off
+    functions:
+      - calculate_and_crash
+      - calculate_and_bounce
+
+  - name: power_house
+    description: energy storage and fuel consumption
+    functions:
+      - calculate_stored_energy
+      - calculate_movement_energy
+      - estimate_fuel_used
+
+  - name: time_management
+    module_name: second
+    functions:
+      - calculate_time
+      - format_time
+
+  - name: speed_analysis
+    sub_modules:
+      - speed_limits: max velocity based on aerodynamics
+      - speed_right_now: instantaneous speed
+
+  - name: work_done
+    description: mechanical work calculation
+    functions:
+      - calculate_work_done
+...

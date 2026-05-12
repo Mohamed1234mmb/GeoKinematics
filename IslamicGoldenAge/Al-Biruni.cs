@@ -1,20 +1,28 @@
-/**
-     Al-Biruni Model for calculating the distance to the horizon based on height and horizon angle.
-     high : Height above sea level in kilometers.
-     horizonAngleDegrees : Angle to the horizon in degrees.
-**/
 using System;
-using static Geodesy.Physics.GeodeticConstants;
+using static Geodesy.Physics.EarthMath;
 
 namespace Geodesy.Physics;
-
+/// <summary>Al-Biruni's method for calculating the Earth's radius based on the observer's height and the angle to the horizon.</summary>
 public static class AlBiruni
 {
-    public static double CalculateEarthRadius(double high, double horizonAngleDegrees)
+
+    /// <summary>This funtion to calculate radius of the Earth to height and horizon angle</summary>
+    /// <param name="height">Summit height above sea level </param>
+    /// <param name="horizonAngleDegrees">It is the angle at which your eye tilts from the horizontal line in order to see the farthest point on the horizon.</param>
+    /// <example>
+    /// <code>
+    /// double IconicTowerHeight = 385.8; // height of the iconic tower in Egypt's New Administrative Capital in meters;
+    /// double HorizonAngle = 0.629; // angle to the horizon in degrees;
+    /// double EarthRadius = AlBiruni.CalculateEarthRadius(IconicTowerHeight, HorizonAngle);
+    /// Console.WriteLine($"The radius of the Earth {EarthRadius} meters");
+    /// </code>
+    /// </example>
+    /// <returns>returns the radius of the Earth Al-Biruni</returns>
+    public static double CalculateEarthRadius(double height, double horizonAngleDegrees)
     {
-        double theta = horizonAngleDegrees * Degree_To_Radian;
+        double theta = horizonAngleDegrees * DegreeToRadians;
         double cos = Math.Cos(theta);
-        double R = (high * cos) / (1 - cos);
-        return Math.Round(R, 3);
+        double radius = (height * cos) / (1 - cos);
+        return Math.Round(radius, 3);
     }
 }

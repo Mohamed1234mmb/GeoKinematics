@@ -1,0 +1,44 @@
+# geokinematics.yml
+---
+- name: "Earth Mathematical Models"
+  href: earth-math.md
+- name: "Haversine Distance Formula"
+  href: haversine-formula.md
+- name: "Earth Radius Calculations"
+  href: radius-earth-center.md
+
+- name: "Al-Biruni (Earth Radius)"
+  href: al-biruni.md
+- name: "Al-Buzjani (Trigonometry)"
+  href: al-buzjani.md
+- name: "Ibn-Bajja (Dynamics)"
+  href: Ibn-bajja.md
+
+- name: "Current Speed (Right Now)"
+  href: speed-right-now.md
+- name: "Speed Limits"
+  href: speed-limits.md
+- name: "Acceleration Engine"
+  href: acceleration.md
+- name: "Power House"
+  href: power-house.md
+- name: "Work Done & Energy"
+  href: work-done.md
+- name: "Collision Dynamics"
+  href: collision.md
+- name: "Seconds (Time Modules)"
+  href: second.md
+
+- name: "Physics Constants"
+  href: constans.md
+- name: "Newton's First Law"
+  href: newton-1.md
+- name: "Newton's Second Law"
+  href: newton-2.md
+- name: "Newton's Third Law"
+  href: newton-3.md
+
+- name: "Unit Conversions"
+  href: transfers.md
+
+

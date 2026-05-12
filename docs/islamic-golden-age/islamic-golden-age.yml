@@ -1,0 +1,26 @@
+# islamic-golden-age.yml
+---
+library: geokinematics
+version: 2.0.0
+theme: "Honoring Islamic Golden Age Scholars"
+
+scholars_modules:
+  - scholar: al_biruni
+    achievement: earth_radius_calculation
+    idea: "Measuring Earth from peaks (e.g., Iconic Tower Egypt)"
+    functions: [calculate_earth_radius]
+
+  - scholar: al_buzjani
+    achievement: trigonometry_pioneer
+    idea: "Law of Sines and Cosines for navigation"
+    functions: [calculate_side, calculate_angle]
+
+  - scholar: ibn_bajja
+    achievement: dynamics_and_motion
+    idea: "Velocity as the difference between force and resistance"
+    functions: [calculate_velocity]
+
+tools:
+  - name: transfers
+    description: unit conversion (meters to km, degrees to radians)
+...
