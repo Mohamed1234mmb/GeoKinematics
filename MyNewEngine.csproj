@@ -9,7 +9,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>GeoKinematics</AssemblyName>
     <RootNamespace>GeoKinematics</RootNamespace>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
     <LangVersion>latest</LangVersion>
     <Description> it is a C# library that i designed using . Net 9.0. it performs calculations for (Earth center) models from Al-biruni Al-buzjani, Ibn-bajja and Newton (etc)..</Description>
 
@@ -19,7 +19,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <RepositoryType>git</RepositoryType>
     <PackageIcon>GK.png</PackageIcon>
-    <PackageTags>geospatial, kinematics, physics-engine, geodesy, navigation, csharp</PackageTags>
+    <PackageTags>distance-calculation, math-engine, physics-engine, navigation, csharp, dotnet9, kinematics</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

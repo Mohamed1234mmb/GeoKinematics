@@ -7,55 +7,13 @@
 
 I tried to design the library in a simpler and clearer way:
 
-### Geodesy & Earth Models
-- [Earth Mathematical Models](https://github.com)
+* **Geodesy & Earth Models:** Earth Mathematical Models, Haversine Distance Formula, Earth Radius Calculations.
 
-- [Haversine Distance Formula](geodesy/haversine-formula.md)
-- [Earth Radius Calculations](geodesy/radius-earth-center.md)
+* **Islamic Golden Age Scholars:** Al-Biruni (Earth Radius mountain method), Al-Buzjani (Spherical Trigonometry), Ibn-Bajja (Early Dynamics & Velocity).
 
----
+* **Kinematics & Motion:** Current Speed, Speed Limits, Acceleration Engine, Power House, Work Done, Collision Dynamics.
 
-###  Islamic Golden Age Scholars
-
-- [Al-Biruni: Earth Radius mountain method](islamic-golden-age/al-biruni.md)
-
-- [Al-Buzjani: Spherical Trigonometry](islamic-golden-age/al-buzjani.md)
-
-- [Ibn-Bajja: Early Dynamics & Velocity](islamic-golden-age/Ibn-bajja.md)
-
----
-
-###  Kinematics & Motion
-
-- [Current Speed (Real-time)](kinematics/speed-right-now.md)
-
-- [Speed Limits & Rules](kinematics/speed-limits.md)
-
-- [Acceleration & Deceleration Engine](kinematics/acceleration.md)
-
-- [Power House (Energy Storage)](kinematics/power-house.md)
-
-- [Work Done & Potential Energy](kinematics/work-done.md)
-
-- [Collision Dynamics (Elastic/Inelastic)](kinematics/collision.md)
-
-- [Time Modules (Seconds)](kinematics/second.md)
-
----
-
-###  Newtonian Physics
-The fundamental laws of motion implemented for .NET.
-- [Physics Constants](newton-law/constatns.md)
-
-- [Newton's First Law (Inertia)](newton-law/newton-1.md)
-
-- [Newton's Second Law (Force)](newton-law/newton-2.md)
-
-- [Newton's Third Law (Action/Reaction)](newton-law/newton-3.md)
-
-### Transfers 
-- [transfers](transfers/transfers.md)
-
+* **Newtonian Physics:** Fundamental laws of motion implemented for .NET (Inertia, Force, Action/Reaction).
 ---
 
  ### Some Examples
@@ -78,7 +36,10 @@ Console.WriteLine(radius);
 ```csharp
 // example : calculate the total force needed to move an object
 
-double force = Newton.CalculatePush(1000f, 2.5f);
+float carWeight = 1000f;
+float acceleration = 2.5f;
+
+float force = Newton.CalculatePush(carWeight, acceleration);
 Console.WriteLine(force);
 ```
 3. Haversine Distance (Geodesy)
@@ -86,32 +47,16 @@ Console.WriteLine(force);
 ```csharp
 // example : calculate the distance between two points
 
+double lat1 = 30.0444;
+double lon1 = 31.2357;
+double lat2 = 55.7558;
+double lon2 = 37.6173;
+
 double radius = RadiusEarthCenter.AverageRadius();
 
-double distance = Haversine.CalculateDistance(30.0444 , 31.2357 , 55.7558 , 37.6173 , radius);
+double distance = HaversineFormula.CalculateDistance(lat1 , lon1 , lat2 , lon2 , radius);
 Console.WriteLine(distance);
 ```
----
-
-Target Stack:
-.NET 6.0, 8.0, 9.0 (High Performance)
-.NET Standard 2.0 (Maximum Compatibility)
-Platforms: Windows, Linux, macOS, Android, iOS (Cross-Platform)
-Language: C# 13.0
-
----
-### Links
-
-**geodesy** : 
-> [MY HISTORY]
-**[Read My Story here](history.md)**
-
->[LINK DOWNLOAD]
-**[Donwload on Nuget](https://www.nuget.org/packages/GeoKinematics)**
-
-> [GITHUB LINK]
-**[Read more on GitHub](https://github.com/Mohamed1234mmb/GeoKinematics)**
-
 
 
 
