@@ -16,6 +16,7 @@ namespace Geodesy.Demo
 
             double Km = Transfers.MetersToKilometers(height);
             double radius = AlBiruni.CalculateEarthRadius(Km, angle);
+            
             double distance = HaversineFormula.CalculateDistance(lat1, lon1, lat2, lon2, radius);
             Console.WriteLine($"The distance between the two points is {distance} kilometers.");
 
